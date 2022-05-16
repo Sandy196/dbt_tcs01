@@ -28,3 +28,8 @@ models:
               values: ['ASIA','AFRICA','AMERICA','EUROPE','MIDDLE EAST','ARTIC']
               config:
                 store_failures: true
+  - name: stg_customers
+    description: customer related data at stage
+    columns:
+      - name: customer_id
+        description: '{{ doc("primarykey") }}'
